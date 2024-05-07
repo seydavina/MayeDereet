@@ -24,8 +24,8 @@ class LimamouPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            ->id('limamou')
-            ->path('limamou')
+            ->id('admin')
+            ->path('admin')
             ->login()
             ->colors([
                 'primary' => Color::Amber,
