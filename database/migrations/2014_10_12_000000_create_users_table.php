@@ -18,7 +18,6 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('grade')->nullable();
-            $table->string('grade')->nullable();
             $table->date('date_of_birth')->nullable();
             $table->string('blood_group')->nullable();
             $table->integer('weight')->nullable();
