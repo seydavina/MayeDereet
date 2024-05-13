@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('stocks', function (Blueprint $table) {
             $table->id();
+            $table->string('blood_group');
+            $table->integer('quantity');
+            $table->date('expiry_date')->nullable();
             $table->timestamps();
         });
     }

@@ -5,23 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Donneur extends Model
+class Admins extends Model
 {
     use HasFactory;
 
+
     protected $fillable = [
         'name',
-        'blood_group',
-        'date_of_birth',
         'email',
-        'smooking',
-        'allergies',
-        'weight',
-        'maladies',
-        'traitement',
-        'alcool'
+        'grade',
+        'phone_number'
     ];
-
 
     /**
      * The attributes that should be hidden for serialization.
@@ -38,4 +32,6 @@ class Donneur extends Model
     protected $casts = [];
 
     public $timestamps = false;
+
+
 }
